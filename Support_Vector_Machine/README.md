@@ -1,5 +1,5 @@
 ### ・contributor name
-aa
+
 ### ・project start date 
 
 ### ・model name
