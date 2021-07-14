@@ -1,2 +1,2 @@
-# model_tutorial
+# Model Tutorial
 This is tutorial of machine learning model.
