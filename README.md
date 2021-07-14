@@ -8,3 +8,5 @@ git clone https://github.com/GuernicaTaro/model_tutorial.git
 ```
 # memo
 templateフォルダをコピーして，自分の使う機械学習モデルの名前に変更してください．
+
+# test
