@@ -6,4 +6,4 @@ Tomohiro Otsu
 Support Vector Machine
 ### ・function name on python code
 
-### ・descriptions
+### ・descriptions a
