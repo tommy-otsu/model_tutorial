@@ -6,12 +6,14 @@ Tomohiro Otsu
 Support Vector Machine
 ### ・function name on python code
 モデルの学習は，
+
 '''
 
 "HUGA" = "HOGE"()
 "HUGA".fit("input", "output")
 
 '''
+
 とするのみ．scikit-learnに格納されているSVMモジュールは以下の3種．
 - SVC
 
