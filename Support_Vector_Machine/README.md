@@ -4,7 +4,7 @@ Tomohiro Otsu
 2021/07/14
 ## model name
 Support Vector Machine
-## descriptions a
+## descriptions 
 モデルの学習は，  
 ```
 "HUGA" = "HOGE"()  
