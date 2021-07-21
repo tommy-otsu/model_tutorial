@@ -29,4 +29,4 @@ clf.fit(x_train, y_train)
 # テストデータを評価する
 y_pred = clf.predict(x_test)
 ss = accuracy_score(y_test, y_pred)
-print(ss)
+print(ss*100,'%')
