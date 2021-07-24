@@ -22,6 +22,9 @@ x = df
 #データの分割
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, train_size=0.8, shuffle=True)
 
+for i in path_name:data.to_csv('保存先のPathとファイル名', index=False)
+
+
 # モデルに訓練用データを与えて学習させる
 clf = SVC()
 clf.fit(x_train, y_train)
