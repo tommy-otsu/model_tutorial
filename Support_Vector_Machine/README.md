@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### ・contributor name
 Tomohiro Otsu
 ### ・project start date 
@@ -28,4 +27,3 @@ Support Vector Machine
 - SVC  
 - LinearSVC  
 - NuSVC
->>>>>>> 229cb828fd7f11fcfbfbf9e7206560921c689515
