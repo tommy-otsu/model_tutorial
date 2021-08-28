@@ -5,6 +5,8 @@ import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 import warnings
+import csv
+
 warnings.filterwarnings('ignore')
 
 from sklearn.datasets import load_iris
@@ -21,9 +23,12 @@ y  = data_set.target
 x = df 
 #データの分割
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, train_size=0.8, shuffle=True)
+x_train.head()
 
-for i in path_name:data.to_csv('保存先のPathとファイル名', index=False)
+# file = open('test_data.csv', 'w')    #既存でないファイル名を作成してください
+# w = csv.writer(file)
 
+# file.close()
 
 # モデルに訓練用データを与えて学習させる
 clf = SVC()
