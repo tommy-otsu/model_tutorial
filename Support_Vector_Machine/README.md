@@ -5,6 +5,8 @@ Tomohiro Otsu
 ## model name
 Support Vector Machine
 ## descriptions 
+SVMは基本的に２クラス分類の手法
+
 モデルの学習は，  
 ```
 "HUGA" = "HOGE"()  

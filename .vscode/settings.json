@@ -1,0 +1,7 @@
+{
+    "files.eol": "\n",
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};C:\\Users\\otsu\\anaconda3;C:\\Users\\otsu\\anaconda3\\Scripts"
+    },
+    "python.pythonPath": "C:\\Users\\otsu\\anaconda3\\python.exe"
+}
