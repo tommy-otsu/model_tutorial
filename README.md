@@ -38,6 +38,10 @@ templatesフォルダをコピーして，自分の使う機械学習モデル�
   再起型ニューラルネットワーク(RNN)
 
   残差ネットワーク(ResNet)
+  
+  Long Short-Term Memory(LSTM)
+  
+  敵対的生成モデル(Generative Adversarial Network(GAN))
 
 - ベイズ
 
