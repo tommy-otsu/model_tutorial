@@ -41,7 +41,7 @@ templatesフォルダをコピーして，自分の使う機械学習モデル�
   
   Long Short-Term Memory(LSTM)
   
-  敵対的生成モデル(Generative Adversarial Network(GAN))
+  敵対的生成ネットワーク(Generative Adversarial Network(GAN))
 
 - ベイズ
 
