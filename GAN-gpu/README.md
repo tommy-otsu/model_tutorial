@@ -1,18 +1,19 @@
-### ・contributor name
-Nishida Shuhei
-### ・project start date 
-2021.07.21
-### ・model name
-statsmodels.tsa.arima.model
-### ・descriptions
-Time series prediction by ARMA model
+### contributor name
+Hirofumi Beppu
+### project start date 
+2021.10.22
+### model name
+Generative Adversarial Network
+### descriptions
+Fake images generator by GAN
 
-# ARMAモデルによる時系列予測
+# 敵対的生成ネットワークによる実在しない画像データの生成
 
-自己回帰移動平均モデル（autoregressive moving average model, ARMAモデル）は時系列データに適用される線形モデルの一種で、直近数ステップでの観測や誤差から現在の観測を説明する。
+[GAN][gan]は生成モデルの一種であり、データから特徴を学習することで、実在しないデータを生成したり、存在するデータの特徴に沿って変換できる。
 
+[gan]:https://www.imagazine.co.jp/gan%EF%BC%9A%E6%95%B5%E5%AF%BE%E7%9A%84%E7%94%9F%E6%88%90%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B%E3%80%80%EF%BD%9E%E3%80%8C%E6%95%99%E5%B8%AB/ "GAN"
 
-ARMA_pred.ipynbでは、以下の手順でARMAモデルを用いた時系列予測を行った。
+敵対的生成ネットワーク
 
 ## 1. 前処理
 単位根検定を行い、必要に応じて階差系列を取るなど前処理を行う
