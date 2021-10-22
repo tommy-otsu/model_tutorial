@@ -1,0 +1,26 @@
+・今回使ったプログラムの環境は
+OS windows 10
+VSCode 
+python 3.7.9（3.8以上だとtensorflow2.以降しか使えないが，今回はtensorflow1.~を使う必要がある）
+tensorflow1.14（tensorflow.contibはtensorflow2.~では互換性がなく，煩雑．tensorflow2.~以降で使えなくなったものが多いらしく，安定して使える/オープンソースの多くがversion 1）
+keras 2.1.2（keras_adversarialが使えるのはこれくらいのバージョンらしく，加えて2.1.3以降だとAttributeError: 'Model' object has no attribute 'internal_input_shapes'が出るため）
+
+・バージョン管理ができていないと，頻繁にエラーが出て苦しむので要注意．
+・必要に応じてダウングレードする（python 3.7.9のコマンドプロンプト上でのpip install~だとそのpythonに紐づいたものだけが変わるので，専用のものだと割り切れば楽か．）
+
+・研究室のpcのgpuはGeForce RTX 30シリーズで，どうやらCUDA11以降でないとgpuとしてうまく認識されない（or認識はするが非常に遅くなる）みたい．
+- https://teratail.com/questions/331673
+- https://teratail.com/questions/312270
+- https://teratail.com/questions/323574
+- https://github.com/DeepLabCut/DeepLabCut/issues/944
+
+・cuda11以降に対応しているのはtensorflow2.4以降だが，上記の理由により今回は研究室のPCの使用を見送り．（上の課題をクリアできれば利用してもよさそう．）
+・ちなみに研究室のpcでcpuのみで計算すると，1エポックあたり20s程度かかったので，50000エポックにはおよそ11日かかる計算．
+・家のpcだとgpuが使え，1エポックあたり1s程度だったので，gpuだと20倍ほど速くなったといえる．
+
+自分のPCのスペック
+・プロセッサ：Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz   3.60 GHz
+・実装RAM：32.0 GB
+・システムの種類：64 ビット オペレーティング システム、x64 ベース プロセッサ
+・OS：Windows 10 Pro
+・GPU：NVIDIA GeForce RTX 2070
