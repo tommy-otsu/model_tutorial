@@ -13,8 +13,6 @@ Fake images generator by GAN
 
 [gan]:https://www.imagazine.co.jp/gan%EF%BC%9A%E6%95%B5%E5%AF%BE%E7%9A%84%E7%94%9F%E6%88%90%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B%E3%80%80%EF%BD%9E%E3%80%8C%E6%95%99%E5%B8%AB/ "GAN"
 
-敵対的生成ネットワーク
-
 ## 1. 前処理
 単位根検定を行い、必要に応じて階差系列を取るなど前処理を行う
 ## 2. モデル次数の決定
