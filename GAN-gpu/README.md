@@ -15,6 +15,8 @@ Fake image generator by GAN
 
 主に参考にしたサイト：<https://www.inoue-kobo.com/ai_ml/gan-pikachu/index.html>
 
+オフィシャルサイト：<https://www.tensorflow.org/tutorials/generative/dcgan?hl=ja>
+
 ## 1. 準備（ソフトウェア等）
 ### 今回使ったプログラムを実行したPCのスペック
 
@@ -85,6 +87,8 @@ pip install keras==2.1.2
 
 ・必要に応じてダウングレードする（python 3.7.9のコマンドプロンプト上でのpip install~だとそのpythonに紐づいたものだけが変わるので，専用のものだと割り切れば楽か．）
 
+・逐次必要なツールはネットからダウンロード or pipでインストールしてください．
+
 ## 2. Googleから画像の収集
 1. Google画像検索から画像を集めるためのツールを以下でインストール．
 
@@ -107,4 +111,14 @@ pip install google_images_download
 ## 4. 欲しい画像の抽出
 ダウンロードしてきた画像には本来学習させたい画像（今回はピカチュウ）以外のものも含まれるので，ここではネットワークにいくつか画像を学習させ，自動的に欲しい画像を抽出させてくる方法を記載する．
 
-1. [labeled](./dataset/labeled)
+1. [labeled](./dataset/labeled)に訓練用と検証用データを置く．それぞれに欲しいもの（ピカチュウ）とそうでないものに分けていくつか教師データを用意する．（このあたりは手作業．）また保存先のフォルダを事前に用意（今回だとpredicted_auto2）．
+
+2. [train.ipynb](./find/train.ipynb)を実行．
+
+## 5. GANの学習
+
+1. [generate.ipynb](./generate.ipynb)を実行．[generated](./generated)のフォルダに100エポックごとの（偽の）生成画像が保存されていく．
+
+### 注意
+
+この環境だと1エポックあたりおよそ1sだったが，cpuで計算したところ1エポックあたり20sほどで50000エポック計算しようと思うと，10日以上かかることになるので，やはりgpuを使わないと厳しいかもしれない．
